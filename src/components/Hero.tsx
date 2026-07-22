@@ -63,7 +63,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.32 }}
-            className="mt-4 h-10 text-xl font-medium text-accent-soft sm:text-2xl"
+            className="mt-4 min-h-10 text-lg font-medium leading-snug text-accent-soft sm:text-2xl"
           >
             <Typewriter words={t.hero.roles} />
           </motion.div>

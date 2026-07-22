@@ -133,7 +133,7 @@ export const content: Record<Lang, ContentShape> = {
     hero: {
       kicker: "Founder & CEO, Gintex.ai",
       name: "Itai Gelman",
-      roles: ["Entrepreneur", "Business Builder", "Founder & CEO, Gintex.ai"],
+      roles: ["Entrepreneur", "Decision Intelligence", "Founder & CEO, Gintex.ai"],
       lead: "Hello, I'm Itai.",
       sub: "If you've arrived here, there's a good chance we've already met. I don't hand this card to many people, so before we talk about business, technology, artificial intelligence, or opportunities, I'd like to give you a brief introduction to the world I'm building.",
       ctaPrimary: "Schedule a Meeting",
@@ -346,7 +346,7 @@ export const content: Record<Lang, ContentShape> = {
     hero: {
       kicker: "מייסד ומנכ\"ל, Gintex.ai",
       name: "איתי גלמן",
-      roles: ["יזם", "בונה עסקים", "מייסד ומנכ\"ל, Gintex.ai"],
+      roles: ["יזם", "Decision Intelligence", "מייסד ומנכ\"ל, Gintex.ai"],
       lead: "שלום, אני איתי.",
       sub: "אם הגעת לכאן, סביר להניח שכבר נפגשנו. אני לא מחלק את הכרטיס הזה להרבה אנשים, ולכן לפני שנדבר על עסקים, טכנולוגיה, בינה מלאכותית או הזדמנויות, אשמח לתת לך הצצה קצרה לעולם שאני בונה.",
       ctaPrimary: "קביעת פגישה",
