@@ -185,6 +185,17 @@ export const content: Record<Lang, ContentShape> = {
       title: "One Question. An Entire Ecosystem.",
       items: [
         {
+          name: "Gintex.ai",
+          tag: "Business Visibility Intelligence",
+          description: [
+            "Gintex.ai is the company behind everything here — the umbrella that brings OnlinePerception.ai, GEON, GeoRepute.ai, and CopyUp.ai together into one coherent approach to how businesses are seen, understood, and chosen.",
+          ],
+          cta: "Explore Gintex.ai",
+          href: "https://www.gintex.ai",
+          logo: "/logos/gintex.png",
+          color: "blue",
+        },
+        {
           name: "OnlinePerception.ai",
           tag: "Research & Insights",
           description: [
@@ -303,7 +314,7 @@ export const content: Record<Lang, ContentShape> = {
       linkedin: "LinkedIn",
       linkedinHref: "https://linkedin.com",
       website: "Gintex.ai",
-      websiteHref: "https://gintex-ai.vercel.app",
+      websiteHref: "https://www.gintex.ai",
     },
     footer: {
       brand: "Gintex.ai",
@@ -386,6 +397,17 @@ export const content: Record<Lang, ContentShape> = {
       kicker: "האקוסיסטם",
       title: "שאלה אחת. אקוסיסטם שלם.",
       items: [
+        {
+          name: "Gintex.ai",
+          tag: "בינת נראות עסקית",
+          description: [
+            "Gintex.ai היא החברה שמאחורי כל מה שכאן - המטריה שמאגדת את OnlinePerception.ai, GEON, GeoRepute.ai ו-CopyUp.ai לגישה אחת קוהרנטית לאופן שבו עסקים נתפסים, מובנים ונבחרים.",
+          ],
+          cta: "לגלות את Gintex.ai",
+          href: "https://www.gintex.ai",
+          logo: "/logos/gintex.png",
+          color: "blue",
+        },
         {
           name: "OnlinePerception.ai",
           tag: "מחקר ותובנות",
@@ -505,7 +527,7 @@ export const content: Record<Lang, ContentShape> = {
       linkedin: "לינקדאין",
       linkedinHref: "https://linkedin.com",
       website: "Gintex.ai",
-      websiteHref: "https://gintex-ai.vercel.app",
+      websiteHref: "https://www.gintex.ai",
     },
     footer: {
       brand: "Gintex.ai",

@@ -51,12 +51,20 @@ const COLOR_STYLES: Record<
   },
 };
 
-function EcosystemCard({ item, index }: { item: EcosystemItem; index: number }) {
+function EcosystemCard({
+  item,
+  index,
+  spanFull,
+}: {
+  item: EcosystemItem;
+  index: number;
+  spanFull?: boolean;
+}) {
   const dims = item.logo ? LOGO_DIMENSIONS[item.logo] : undefined;
   const styles = COLOR_STYLES[item.color];
 
   return (
-    <Reveal delay={index * 0.08} className="h-full">
+    <Reveal delay={index * 0.08} className={`h-full ${spanFull ? "sm:col-span-2" : ""}`}>
       <article
         className={`group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-surface/60 p-8 transition-colors duration-300 ${styles.hoverBorder}`}
       >
@@ -150,7 +158,12 @@ export default function Ecosystem() {
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
           {t.ecosystem.items.map((item, i) => (
-            <EcosystemCard key={item.name} item={item} index={i} />
+            <EcosystemCard
+              key={item.name}
+              item={item}
+              index={i}
+              spanFull={i === 0}
+            />
           ))}
         </div>
       </div>
