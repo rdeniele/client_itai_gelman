@@ -18,16 +18,34 @@ export default function QuestionSection() {
           </p>
         </Reveal>
 
-        <div className="mx-auto mt-10 max-w-xl space-y-3">
-          {t.question.paragraphs.map((p, i) => (
-            <Reveal key={p} delay={0.15 + i * 0.06}>
-              <p className="text-center leading-relaxed text-muted">{p}</p>
-            </Reveal>
-          ))}
+        <div className="mx-auto mt-12 max-w-xl">
+          <Reveal delay={0.15}>
+            <p className="text-start leading-relaxed text-muted">{t.question.intro}</p>
+          </Reveal>
+
+          <Reveal delay={0.2}>
+            <ul className="mt-5 space-y-2 border-s-2 border-border ps-5">
+              {t.question.pattern.map((line) => (
+                <li key={line} className="text-start leading-relaxed text-foreground/80">
+                  {line}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+
+          <Reveal delay={0.25}>
+            <p className="mt-5 text-start leading-relaxed text-muted">{t.question.reflection[0]}</p>
+          </Reveal>
+
+          <Reveal delay={0.3}>
+            <p className="mt-2 text-start text-lg font-semibold text-accent-soft">
+              {t.question.reflection[1]}
+            </p>
+          </Reveal>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
-          <Reveal delay={0.2}>
+          <Reveal delay={0.35}>
             <div className="h-full rounded-2xl border border-border bg-surface/60 p-7">
               <p className="mb-4 text-sm font-medium text-muted">{t.question.notChooseLead}</p>
               <ul className="space-y-3">
@@ -41,7 +59,7 @@ export default function QuestionSection() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.3}>
+          <Reveal delay={0.4}>
             <div className="h-full rounded-2xl border border-accent-green/30 bg-accent-green/5 p-7">
               <p className="mb-4 text-sm font-medium text-accent-green-soft">{t.question.doChooseLead}</p>
               <ul className="space-y-3">
@@ -56,11 +74,11 @@ export default function QuestionSection() {
           </Reveal>
         </div>
 
-        <div className="mx-auto mt-14 max-w-2xl space-y-5 border-t border-border pt-10">
+        <div className="mx-auto mt-14 max-w-xl space-y-4 border-t border-border pt-10">
           {t.question.closing.map((p, i) => (
             <Reveal key={p} delay={0.1 + i * 0.1}>
               <p
-                className={`text-center leading-relaxed ${
+                className={`text-start leading-relaxed ${
                   i === t.question.closing.length - 1
                     ? "text-lg font-medium text-accent-soft"
                     : "text-muted"

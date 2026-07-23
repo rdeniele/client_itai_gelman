@@ -54,7 +54,9 @@ export interface ContentShape {
     kicker: string;
     title: string;
     question: string;
-    paragraphs: string[];
+    intro: string;
+    pattern: string[];
+    reflection: [string, string];
     notChooseLead: string;
     notChoose: string[];
     doChooseLead: string;
@@ -159,15 +161,15 @@ export const content: Record<Lang, ContentShape> = {
       kicker: "The Question",
       title: "The Question Behind Everything I Build",
       question: "Why do people choose one company over another?",
-      paragraphs: [
-        "For more than two decades, I've worked with companies, opened new markets, built growth engines, and collaborated with hundreds of businesses.",
-        "Over the years, I kept seeing the same pattern.",
+      intro:
+        "For more than two decades, I've worked with companies, opened new markets, built growth engines, and collaborated with hundreds of businesses. Over the years, I kept seeing the same pattern:",
+      pattern: [
         "Great companies that struggled to grow.",
         "Average companies that became market leaders.",
         "And brands that became the obvious choice, even though they weren't the cheapest or even the best.",
-        "That's when I realized I had been asking the wrong question.",
-        "I wasn't asking how to market a business better.",
-        "I was asking:",
+      ],
+      reflection: [
+        "That's when I realized I had been asking the wrong question. I wasn't asking how to market a business better. I was asking:",
         "What truly drives people to choose?",
       ],
       notChooseLead: "Most companies believe customers choose based on:",
@@ -182,10 +184,7 @@ export const content: Record<Lang, ContentShape> = {
         "The confidence that it's the right choice",
       ],
       closing: [
-        "I realized that most of these decisions are made long before the first phone call.",
-        "Before someone visits your website.",
-        "And long before they ever speak to your business.",
-        "That realization started a journey of research, development, and innovation.",
+        "I realized that most of these decisions are made long before the first phone call. Before someone visits your website. And long before they ever speak to your business. That realization started a journey of research, development, and innovation.",
         "Over time, that journey evolved into a methodology, a suite of platforms, and ultimately an entire ecosystem designed to help organizations understand how the market sees them, how decisions are made, and how to become part of those decisions.",
       ],
     },
@@ -379,15 +378,15 @@ export const content: Record<Lang, ContentShape> = {
       kicker: "השאלה",
       title: "השאלה שמאחורי כל מה שאני בונה",
       question: "למה אנשים בוחרים בחברה אחת על פני אחרת?",
-      paragraphs: [
-        "במשך למעלה משני עשורים עבדתי עם חברות, פתחתי שווקים חדשים, בניתי מנועי צמיחה ושיתפתי פעולה עם מאות עסקים.",
-        "לאורך השנים חזרתי וראיתי את אותה תבנית.",
+      intro:
+        "במשך למעלה משני עשורים עבדתי עם חברות, פתחתי שווקים חדשים, בניתי מנועי צמיחה ושיתפתי פעולה עם מאות עסקים. לאורך השנים חזרתי וראיתי את אותה תבנית:",
+      pattern: [
         "חברות מצוינות שהתקשו לצמוח.",
         "חברות בינוניות שהפכו למובילות שוק.",
         "ומותגים שהפכו לבחירה המובנת מאליה, למרות שלא היו הזולים ביותר ואפילו לא הטובים ביותר.",
-        "אז הבנתי שכל הזמן שאלתי את השאלה הלא נכונה.",
-        "לא שאלתי איך לשווק עסק טוב יותר.",
-        "שאלתי:",
+      ],
+      reflection: [
+        "אז הבנתי שכל הזמן שאלתי את השאלה הלא נכונה. לא שאלתי איך לשווק עסק טוב יותר. שאלתי:",
         "מה באמת גורם לאנשים לבחור?",
       ],
       notChooseLead: "רוב החברות מאמינות שלקוחות בוחרים על סמך:",
@@ -402,10 +401,7 @@ export const content: Record<Lang, ContentShape> = {
         "הביטחון שזו הבחירה הנכונה",
       ],
       closing: [
-        "הבנתי שרוב ההחלטות האלו מתקבלות הרבה לפני שיחת הטלפון הראשונה.",
-        "לפני שמישהו נכנס לאתר שלך.",
-        "והרבה לפני שהם בכלל מדברים עם העסק שלך.",
-        "התובנה הזאת הובילה למסע של מחקר, פיתוח וחדשנות.",
+        "הבנתי שרוב ההחלטות האלו מתקבלות הרבה לפני שיחת הטלפון הראשונה. לפני שמישהו נכנס לאתר שלך. והרבה לפני שהם בכלל מדברים עם העסק שלך. התובנה הזאת הובילה למסע של מחקר, פיתוח וחדשנות.",
         "עם הזמן, המסע הזה התפתח למתודולוגיה, למערך פלטפורמות, ולבסוף לאקוסיסטם שלם שנועד לעזור לארגונים להבין איך השוק רואה אותם, איך מתקבלות החלטות, ואיך להיות חלק מההחלטות האלו.",
       ],
     },
