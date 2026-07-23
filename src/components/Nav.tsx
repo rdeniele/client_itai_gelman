@@ -31,7 +31,7 @@ export default function Nav() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-10">
         <a href="#top" className="flex items-center">
-          <Image src="/logos/gintex.png" alt={t.footer.brand} width={120} height={59} className="h-7 w-auto" priority />
+          <Image src="/logos/gintex.png" alt={t.footer.brand} width={1407} height={414} className="h-7 w-auto" priority />
         </a>
 
         <div className="hidden items-center gap-6 whitespace-nowrap lg:flex xl:gap-8">

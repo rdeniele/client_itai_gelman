@@ -55,7 +55,9 @@ export interface ContentShape {
     title: string;
     question: string;
     paragraphs: string[];
+    notChooseLead: string;
     notChoose: string[];
+    doChooseLead: string;
     doChoose: string[];
     closing: string[];
   };
@@ -158,26 +160,33 @@ export const content: Record<Lang, ContentShape> = {
       title: "The Question Behind Everything I Build",
       question: "Why do people choose one company over another?",
       paragraphs: [
-        "Over the years, I have met outstanding companies that struggled to grow.",
-        "I've seen average companies become market leaders.",
-        "I've seen exceptional products fail.",
-        "And I've seen brands become the obvious choice.",
-        "Experience taught me that something deeper influences decisions.",
+        "For more than two decades, I've worked with companies, opened new markets, built growth engines, and collaborated with hundreds of businesses.",
+        "Over the years, I kept seeing the same pattern.",
+        "Great companies that struggled to grow.",
+        "Average companies that became market leaders.",
+        "And brands that became the obvious choice, even though they weren't the cheapest or even the best.",
+        "That's when I realized I had been asking the wrong question.",
+        "I wasn't asking how to market a business better.",
+        "I was asking:",
+        "What truly drives people to choose?",
       ],
-      notChoose: [
-        "People don't choose based solely on price.",
-        "They don't choose solely because of advertising.",
-        "And they don't decide solely because of the product.",
-      ],
+      notChooseLead: "Most companies believe customers choose based on:",
+      notChoose: ["Price", "Advertising", "Product quality"],
+      doChooseLead: "But in reality, decisions are also influenced by:",
       doChoose: [
-        "When they trust.",
-        "When they recognize authority.",
-        "When they see consistency.",
-        "When they feel confident they are making the right decision.",
+        "Trust",
+        "Visibility",
+        "Authority",
+        "Consistency",
+        "The context in which a business appears",
+        "The confidence that it's the right choice",
       ],
       closing: [
-        "The challenge is that most of these decisions are made long before the first meeting, conversation, or purchase.",
-        "My effort to understand how those decisions are formed eventually evolved into research, methodologies, platforms, and ultimately an entire ecosystem.",
+        "I realized that most of these decisions are made long before the first phone call.",
+        "Before someone visits your website.",
+        "And long before they ever speak to your business.",
+        "That realization started a journey of research, development, and innovation.",
+        "Over time, that journey evolved into a methodology, a suite of platforms, and ultimately an entire ecosystem designed to help organizations understand how the market sees them, how decisions are made, and how to become part of those decisions.",
       ],
     },
     ecosystem: {
@@ -371,26 +380,33 @@ export const content: Record<Lang, ContentShape> = {
       title: "השאלה שמאחורי כל מה שאני בונה",
       question: "למה אנשים בוחרים בחברה אחת על פני אחרת?",
       paragraphs: [
-        "לאורך השנים פגשתי חברות מצוינות שהתקשו לצמוח.",
-        "ראיתי חברות בינוניות שהפכו למובילות שוק.",
-        "ראיתי מוצרים יוצאי דופן שנכשלו.",
-        "וראיתי מותגים שהפכו לבחירה הטבעית של הלקוחות.",
-        "הניסיון לימד אותי שמשהו עמוק יותר משפיע על החלטות.",
+        "במשך למעלה משני עשורים עבדתי עם חברות, פתחתי שווקים חדשים, בניתי מנועי צמיחה ושיתפתי פעולה עם מאות עסקים.",
+        "לאורך השנים חזרתי וראיתי את אותה תבנית.",
+        "חברות מצוינות שהתקשו לצמוח.",
+        "חברות בינוניות שהפכו למובילות שוק.",
+        "ומותגים שהפכו לבחירה המובנת מאליה, למרות שלא היו הזולים ביותר ואפילו לא הטובים ביותר.",
+        "אז הבנתי שכל הזמן שאלתי את השאלה הלא נכונה.",
+        "לא שאלתי איך לשווק עסק טוב יותר.",
+        "שאלתי:",
+        "מה באמת גורם לאנשים לבחור?",
       ],
-      notChoose: [
-        "אנשים לא בוחרים רק בגלל מחיר.",
-        "הם לא בוחרים רק בגלל פרסום.",
-        "והם לא מחליטים רק בגלל המוצר.",
-      ],
+      notChooseLead: "רוב החברות מאמינות שלקוחות בוחרים על סמך:",
+      notChoose: ["מחיר", "פרסום", "איכות המוצר"],
+      doChooseLead: "אבל במציאות, החלטות מושפעות גם מ:",
       doChoose: [
-        "כשהם סומכים.",
-        "כשהם מזהים סמכות.",
-        "כשהם רואים עקביות.",
-        "וכשהם מרגישים בטוחים שהם מקבלים את ההחלטה הנכונה.",
+        "אמון",
+        "נראות",
+        "סמכות",
+        "עקביות",
+        "ההקשר שבו העסק מופיע",
+        "הביטחון שזו הבחירה הנכונה",
       ],
       closing: [
-        "האתגר הוא שרוב ההחלטות האלו מתקבלות הרבה לפני הפגישה, השיחה או הרכישה הראשונה.",
-        "הניסיון להבין כיצד נוצרות אותן החלטות הוביל אותי למסע שהפך עם השנים למחקר, למתודולוגיה, לפלטפורמות, ולבסוף לאקוסיסטם שלם.",
+        "הבנתי שרוב ההחלטות האלו מתקבלות הרבה לפני שיחת הטלפון הראשונה.",
+        "לפני שמישהו נכנס לאתר שלך.",
+        "והרבה לפני שהם בכלל מדברים עם העסק שלך.",
+        "התובנה הזאת הובילה למסע של מחקר, פיתוח וחדשנות.",
+        "עם הזמן, המסע הזה התפתח למתודולוגיה, למערך פלטפורמות, ולבסוף לאקוסיסטם שלם שנועד לעזור לארגונים להבין איך השוק רואה אותם, איך מתקבלות החלטות, ואיך להיות חלק מההחלטות האלו.",
       ],
     },
     ecosystem: {

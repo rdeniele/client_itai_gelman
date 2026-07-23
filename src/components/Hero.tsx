@@ -130,8 +130,8 @@ export default function Hero() {
               <Image
                 src="/logos/gintex.png"
                 alt={t.footer.brand}
-                width={96}
-                height={47}
+                width={1407}
+                height={414}
                 className="h-5 w-auto shrink-0"
               />
               <p className="text-muted">{t.footer.tagline}</p>

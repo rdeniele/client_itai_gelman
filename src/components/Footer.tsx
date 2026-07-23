@@ -15,8 +15,8 @@ export default function Footer() {
           <Image
             src="/logos/gintex.png"
             alt={t.footer.brand}
-            width={160}
-            height={78}
+            width={1407}
+            height={414}
             className="mx-auto h-8 w-auto"
           />
           <p className="mt-2 text-sm text-muted">{t.footer.tagline}</p>

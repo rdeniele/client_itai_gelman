@@ -29,6 +29,7 @@ export default function QuestionSection() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
           <Reveal delay={0.2}>
             <div className="h-full rounded-2xl border border-border bg-surface/60 p-7">
+              <p className="mb-4 text-sm font-medium text-muted">{t.question.notChooseLead}</p>
               <ul className="space-y-3">
                 {t.question.notChoose.map((line) => (
                   <li key={line} className="flex items-start gap-3 text-foreground/80">
@@ -42,6 +43,7 @@ export default function QuestionSection() {
 
           <Reveal delay={0.3}>
             <div className="h-full rounded-2xl border border-accent-green/30 bg-accent-green/5 p-7">
+              <p className="mb-4 text-sm font-medium text-accent-green-soft">{t.question.doChooseLead}</p>
               <ul className="space-y-3">
                 {t.question.doChoose.map((line) => (
                   <li key={line} className="flex items-start gap-3 text-accent-green-soft">

@@ -7,11 +7,11 @@ import SectionHeading from "@/components/SectionHeading";
 import type { AccentColor, EcosystemItem } from "@/data/content";
 
 const LOGO_DIMENSIONS: Record<string, { width: number; height: number }> = {
-  "/logos/onlineperception.png": { width: 1600, height: 323 },
-  "/logos/georepute.png": { width: 1488, height: 497 },
-  "/logos/copyup.png": { width: 1599, height: 1600 },
-  "/logos/gintex.png": { width: 1600, height: 800 },
-  "/logos/geon.png": { width: 1024, height: 1024 },
+  "/logos/onlineperception.png": { width: 1458, height: 260 },
+  "/logos/georepute.png": { width: 1484, height: 493 },
+  "/logos/copyup.png": { width: 1194, height: 324 },
+  "/logos/gintex.png": { width: 1407, height: 414 },
+  "/logos/geon.png": { width: 543, height: 578 },
 };
 
 const COLOR_STYLES: Record<
